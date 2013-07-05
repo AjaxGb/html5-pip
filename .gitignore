@@ -1,0 +1,9 @@
+# Ignore VIM Junk #
+###################
+*.swp
+*.swo
+
+# Video Files #
+##############
+*.mp4
+*.m4v
