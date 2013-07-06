@@ -5,15 +5,19 @@
   background: lime;
   position: relative;
   video {
-    max-width: 100%;
+    width: 1280px;
+    height: 720px;
     position: absolute;
     top: 0;
     left: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0);
+    transition: 1s all;
   }
   .pip {
-    width: calc(1280px /3);
+    width: 320px;
+    height: 180px;
     top:10px;
     left:10px;
-    box-shadow: 0 0 5px rgba(0,0,0,.5);
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
   }
 }

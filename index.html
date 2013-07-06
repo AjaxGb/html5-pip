@@ -5,9 +5,13 @@
     <link rel="stylesheet" type="text/css" media="all" href="assets/stylesheets/style.css" />
   </head>
   <body>
+    <div id="controls">
+      <button name="pip" id="pip" onclick="doPictureInPicture();">Picture in Picture</button>
+      <button name="fs" id="fs" onclick="stopPictureInPicture();">Full Screen</button>
+    </div><!-- #controls -->
     <div id="videoContainer">
       <video src="assets/video/elysium-trailer.mp4" autoplay="true" muted="true"></video>
-      <video src="assets/video/angry-birds-gameplay.mp4" autoplay="true" muted="true" class="pip"></video>
+      <video src="assets/video/angry-birds-gameplay.mp4" autoplay="true" muted="true" id="angryBirdsVideo" class=""></video>
     </div><!-- #videoContainer -->
   <script src="assets/javascript/kinetic-v4.5.4.min.js"></script>
   <script src="assets/javascript/main.js"></script>
