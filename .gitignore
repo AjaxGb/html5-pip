@@ -9,3 +9,7 @@
 *.m4v
 *.webm
 *.ogg
+
+# SASS Cache #
+##############
+.sass-cache
