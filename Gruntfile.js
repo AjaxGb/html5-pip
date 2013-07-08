@@ -2,6 +2,7 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		compass: {
 			dist: {
+				// set direcorties for compass
 				options: {
 					sassDir: 'assets/sass',
 					cssDir: 'assets/stylesheets'
@@ -14,11 +15,13 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+		// Watchh for any scss file to be  saved and changed
 		watch: {
 			css: {
 				files: '**/*.scss',
 				tasks: 'compass'
 			},
+			// live reload via live reload extension
 			options: {
 				livereload: true
 			}
