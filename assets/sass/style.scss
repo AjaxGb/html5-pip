@@ -19,6 +19,7 @@
     top:10px;
     left:10px;
     box-shadow: 0 0 10px rgba(0,0,0,.1);
+    z-index: 99999;
   }
 }
 #dropZones {
@@ -27,7 +28,6 @@
 		left: 10px;
 		background: red;
 		position: absolute;
-		z-index: 99999;
 		width: 320px;
 		height: 180px;
 	}
@@ -48,4 +48,8 @@
 		bottom: 10px;
 		top: auto;
 	}
+}
+
+#dropZones .upperRight.over {
+	border: 2px dashed #fff;
 }

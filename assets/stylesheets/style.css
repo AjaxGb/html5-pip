@@ -23,15 +23,15 @@
   top: 10px;
   left: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 99999;
 }
 
-/* line 25, ../sass/style.scss */
+/* line 26, ../sass/style.scss */
 #dropZones .upperLeft, #dropZones .upperRight, #dropZones .lowerRight, #dropZones .lowerLeft {
   top: 10px;
   left: 10px;
   background: red;
   position: absolute;
-  z-index: 99999;
   width: 320px;
   height: 180px;
 }
@@ -51,4 +51,9 @@
 #dropZones .lowerLeft {
   bottom: 10px;
   top: auto;
+}
+
+/* line 53, ../sass/style.scss */
+#dropZones .upperRight.over {
+  border: 2px dashed #fff;
 }
