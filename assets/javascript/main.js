@@ -10,3 +10,4 @@ function stopPictureInPicture(){
   angryBirds.removeAttribute('class');
   console.log('Angry Birds are now Full Screen');
 } // stopPictureInPicture()
+

@@ -24,3 +24,31 @@
   left: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+/* line 25, ../sass/style.scss */
+#dropZones .upperLeft, #dropZones .upperRight, #dropZones .lowerRight, #dropZones .lowerLeft {
+  top: 10px;
+  left: 10px;
+  background: red;
+  position: absolute;
+  z-index: 99999;
+  width: 320px;
+  height: 180px;
+}
+/* line 34, ../sass/style.scss */
+#dropZones .upperRight {
+  right: 10px;
+  left: auto;
+}
+/* line 39, ../sass/style.scss */
+#dropZones .lowerRight {
+  right: 10px;
+  bottom: 10px;
+  left: auto;
+  top: auto;
+}
+/* line 46, ../sass/style.scss */
+#dropZones .lowerLeft {
+  bottom: 10px;
+  top: auto;
+}
