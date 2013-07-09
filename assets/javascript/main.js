@@ -1,6 +1,6 @@
 var angryBirds = document.getElementById('angryBirdsVideo');
 
-//  Change Angry birds to PUP
+//  Change Angry birds to PIP
 function doPictureInPicture(){
  angryBirds.setAttribute('class', 'pip');
  console.log('Angry Birds are now PIP');
@@ -41,20 +41,19 @@ function handleDragLeave(e) {
 	console.log('Testing Drag Leave');
 }
 
-
 function handleDrop(e) {
+
 	if(e.stopPropagation) {
 		e.stopPropagation();
 	}
-
 
 	if(dragSrcEl != this) {
 		dragSrcEl.innerHTML = this.innerHTML;
 		this.innerHTML = e.dataTransfer.getData('text/html');
 	}
 
-
 	return false;
+
 }
 
 function handleDragEnd(e) {
@@ -78,3 +77,7 @@ var dzs = document.querySelectorAll('#dropZones .upperRight');
 	dz.addEventListener('dragover', handleDragOver, false);
 	dz.addEventListener('dragleave', handleDragLeave, false);
 });
+
+
+
+
