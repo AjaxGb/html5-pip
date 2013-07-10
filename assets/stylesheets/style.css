@@ -57,3 +57,11 @@
 #dropZones .upperRight.over {
   border: 2px dashed #fff;
 }
+
+/* line 58, ../sass/style.scss */
+.recentContainer {
+  width: 100px;
+  height: 200px;
+  -webkit-transform: skew(-10deg);
+  overflow: hidden;
+}

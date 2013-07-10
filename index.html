@@ -8,25 +8,33 @@
     <div id="controls">
       <button name="pip" id="pip" onclick="doPictureInPicture();">Picture in Picture</button>
       <button name="fs" id="fs" onclick="stopPictureInPicture();">Full Screen</button>
-      <button name="cap" id="snap">Screenshot</button>
+      <button name="snap " id="snap" onclick="snap();">Screenshot</button>
     </div><!-- #controls -->
 
     <div id="videoContainer">
-      <video src="assets/video/elysium-trailer.mp4" autoplay="true" muted="true"></video>
+<!--       <video src="assets/video/elysium-trailer.mp4" autoplay="true" muted="true"></video> -->
+<!-- 	     <video src="assets/video/angry-birds-gameplay.mp4" autoplay="true" muted="true" id="angryBirdsVideo" class=""> -->
 
-      <div id="dnd" draggable="true">
-	      <video src="assets/video/angry-birds-gameplay.mp4" autoplay="true" muted="true" id="angryBirdsVideo" class=""></video>
-      </div><!-- #dnd -->
+     <div id="dnd" draggable="true">
+			<video autoplay="true" muted="true" id="angryBirdsVideo">
+	      <source src="assets/video/angry-birds-gameplay.mp4" type="video/mp4">
+      </video>
+    </div><!-- #dnd -->
 
-	    <div id="dropZones">
-	    	<div class="upperLeft"></div>
-	    	<div class="upperRight"></div>
-	    	<div class="lowerRight"></div>
-	    	<div class="lowerLeft"></div>
-	    </div><!_- .dropZones -->
+
+
+    <div id="dropZones">
+    	<div class="upperLeft"></div>
+    	<div class="upperRight"></div>
+    	<div class="lowerRight"></div>
+    	<div class="lowerLeft"></div>
+    </div><!-- .dropZones -->
+
     </div><!-- #videoContainer -->
 
-    <canvas></canvas>
+		<div class="recentContainer">
+	    <canvas></canvas>
+		</div><!-- .recentContainer -->
 
   <script src="assets/javascript/kinetic-v4.5.4.min.js"></script>
   <script src="assets/javascript/main.js"></script>
