@@ -89,7 +89,7 @@ var w, h, ratio;
 
 video.addEventListener('loadedmetadata', function(){
 	ratio = video.videoWidth / video.videoHeight;
-	w = video.videoWidth - 100;
+	w = video.videoWidth;
 	h = parseInt(w / ratio, 10);
 	canvas.width = w;
 	canvas.height = h;

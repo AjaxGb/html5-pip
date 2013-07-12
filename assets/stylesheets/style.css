@@ -60,8 +60,14 @@
 
 /* line 58, ../sass/style.scss */
 .recentContainer {
-  width: 100px;
-  height: 200px;
+  width: 345px;
+  height: 303px;
   -webkit-transform: skew(-10deg);
   overflow: hidden;
+  margin: 0 auto;
+  background: lime;
+}
+/* line 65, ../sass/style.scss */
+.recentContainer canvas {
+  margin: 0 auto;
 }
